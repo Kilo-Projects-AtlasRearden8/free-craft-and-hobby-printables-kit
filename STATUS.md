@@ -4,8 +4,8 @@
 
 A fillable, printable hobby and craft printables kit for Asdale Dynamics, LLC, containing four templates in both Markdown source and printable HTML:
 
-| Template | Markdown | Printable HTML |
-|----------|----------|----------------|
+| Template | Markdown Source | Printable HTML |
+|----------|-----------------|----------------|
 | Project Planner | `project-planner.md` | `project-planner.html` |
 | Supply List | `supply-list.md` | `supply-list.html` |
 | Pattern Tracker | `pattern-tracker.md` | `pattern-tracker.html` |
@@ -13,6 +13,7 @@ A fillable, printable hobby and craft printables kit for Asdale Dynamics, LLC, c
 
 Shared resources:
 - `print.css` — print-optimized stylesheet with `@media print` and `@media screen` rules
+- `validate.sh` — validation script that checks HTML well-formedness, CSS presence, LICENSE copyright line, and README credit
 - `LICENSE` — MIT License, copyright line exactly `Copyright (c) 2026 Asdale Dynamics, LLC`
 - `README.md` — kit overview, credits Asdale Dynamics, LLC, links to dylanasdale.github.io
 - `STATUS.md` — this file
@@ -33,18 +34,19 @@ All HTML templates are fillable in-browser (form fields, checkboxes, selects) an
    ```
    pandoc project-planner.md -o project-planner.html --css=print.css --standalone
    ```
-4. **No account, no internet, no secrets required** — fully local-first, offline-capable.
+4. **Validate**: Run `bash validate.sh` to confirm all HTML files are well-formed, the LICENSE has the correct copyright line, and the README credits Asdale Dynamics, LLC.
+5. **No account, no internet, no secrets required** — fully local-first, offline-capable.
 
 ## Verification results
 
-- All 4 HTML files validated as well-formed (no parse errors) using Python's `html.parser`.
-- CSS file is syntactically valid standard CSS.
-- Git initialized, all 11 files committed on branch `master` (commit `999a0ad`).
-- No `.github/workflows` files present.
-- No secrets, API keys, or personal data in any file.
+- `validate.sh` passes: all 4 HTML files validated as well-formed (no parse errors) using Python's `html.parser`.
+- `print.css` present and linked from all HTML templates.
 - LICENSE copyright line verified: `Copyright (c) 2026 Asdale Dynamics, LLC`.
 - README credits Asdale Dynamics, LLC and links to dylanasdale.github.io.
-- Commit message is plain, no `Co-authored-by` trailers.
+- Git initialized, all 12 files committed on branch `master`.
+- No `.github/workflows` files present.
+- No secrets, API keys, or personal data in any file.
+- Commit messages are plain, no `Co-authored-by` trailers.
 - No push, no remote repository created.
 
 ## Known gaps

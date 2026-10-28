@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Planner — Free Craft & Hobby Printables</title>
+  <link rel="stylesheet" href="print.css">
+</head>
+<body>
+  <div class="container">
+    <p class="print-hint">🖨️ Press <kbd>Ctrl/Cmd + P</kbd> to print or save as PDF. Fill in fields directly in your browser before printing.</p>
+
+    <header>
+      <h1>Project Planner</h1>
+      <p class="subtitle">Plan your next craft project from start to finish</p>
+      <div class="meta">
+        <span>Project: <input type="text" placeholder="Project Name"></span>
+        <span>Category: 
+          <select>
+            <option value="">Select…</option>
+            <option>Knitting</option>
+            <option>Crochet</option>
+            <option>Sewing</option>
+            <option>Quilting</option>
+            <option>Embroidery</option>
+            <option>Paper Crafts</option>
+            <option>Woodworking</option>
+            <option>Jewelry</option>
+            <option>Painting</option>
+            <option>Other</option>
+          </select>
+        </span>
+      </div>
+      <div class="meta">
+        <span>Start Date: <input type="date"></span>
+        <span>Target Finish: <input type="date"></span>
+      </div>
+      <div class="meta">
+        <span>Pattern/Source: <input type="text" placeholder="Pattern name, book, URL, designer"></span>
+      </div>
+      <div class="meta">
+        <span>Difficulty: 
+          <select>
+            <option value="">Select…</option>
+            <option>Beginner</option>
+            <option>Easy</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+            <option>Expert</option>
+          </select>
+        </span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Project Overview</h2>
+      <div class="field-group">
+        <div class="field">
+          <label>Why this project?</label>
+          <textarea placeholder="Motivation, inspiration, recipient, etc."></textarea>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label>Finished Dimensions</label>
+          <input type="text" placeholder="e.g., 40\" × 60\" blanket">
+        </div>
+        <div class="field">
+          <label>Gauge / Tension</label>
+          <input type="text" placeholder="e.g., 18 sts × 24 rows = 4\"" >
+        </div>
+      </div>
+      <div class="field">
+        <label>Colors Planned</label>
+        <textarea placeholder="List colors, colorways, or attach swatches"></textarea>
+      </div>
+    </section>
+
+    <section>
+      <h2>Materials Needed</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Qty Needed</th>
+            <th>On Hand</th>
+            <th>To Buy</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><input type="text" placeholder="Yarn, fabric, etc."></td><td><input type="text" placeholder="3"></td><td><input type="text" placeholder="2"></td><td><input type="text" placeholder="1"></td><td><input type="text" placeholder="Colorway, dye lot, etc."></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Tools & Notions Required</h2>
+      <ul class="checklist">
+        <li><input type="checkbox"><label>Scissors / Snips</label></li>
+        <li><input type="checkbox"><label>Tape Measure</label></li>
+        <li><input type="checkbox"><label>Stitch Markers</label></li>
+        <li><input type="checkbox"><label>Row Counter</label></li>
+        <li><input type="checkbox"><label>Tapestry Needle</label></li>
+        <li><input type="checkbox"><label>Blocking Mats</label></li>
+        <li><input type="checkbox"><label>Pins</label></li>
+        <li><input type="checkbox"><label><input type="text" placeholder="Other" style="width:auto;margin-left:0.5rem;border:1px solid #ccc;border-radius:3px;padding:0.125rem 0.375rem;"></label></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Project Steps / Milestones</h2>
+      <table>
+        <thead>
+          <tr>
+            <th class="number-cell">#</th>
+            <th>Step / Milestone</th>
+            <th>Target Date</th>
+            <th class="checkbox-cell">Done</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="number-cell">1</td><td><input type="text" placeholder="e.g., Cast on"></td><td><input type="date"></td><td class="checkbox-cell"><input type="checkbox"></td><td><input type="text"></td></tr>
+          <tr><td class="number-cell">2</td><td><input type="text"></td><td><input type="date"></td><td class="checkbox-cell"><input type="checkbox"></td><td><input type="text"></td></tr>
+          <tr><td class="number-cell">3</td><td><input type="text"></td><td><input type="date"></td><td class="checkbox-cell"><input type="checkbox"></td><td><input type="text"></td></tr>
+          <tr><td class="number-cell">4</td><td><input type="text"></td><td><input type="date"></td><td class="checkbox-cell"><input type="checkbox"></td><td><input type="text"></td></tr>
+          <tr><td class="number-cell">5</td><td><input type="text"></td><td><input type="date"></td><td class="checkbox-cell"><input type="checkbox"></td><td><input type="text"></td></tr>
+          <tr><td class="number-cell">6</td><td><input type="text"></td><td><input type="date"></td><td class="checkbox-cell"><input type="checkbox"></td><td><input type="text"></td></tr>
+          <tr><td class="number-cell">7</td><td><input type="text"></td><td><input type="date"></td><td class="checkbox-cell"><input type="checkbox"></td><td><input type="text"></td></tr>
+          <tr><td class="number-cell">8</td><td><input type="text"></td><td><input type="date"></td><td class="checkbox-cell"><input type="checkbox"></td><td><input type="text"></td></tr>
+          <tr><td class="number-cell">9</td><td><input type="text"></td><td><input type="date"></td><td class="checkbox-cell"><input type="checkbox"></td><td><input type="text"></td></tr>
+          <tr><td class="number-cell">10</td><td><input type="text"></td><td><input type="date"></td><td class="checkbox-cell"><input type="checkbox"></td><td><input type="text"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Progress Log</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time Spent</th>
+            <th>What I Did</th>
+            <th>Next Step</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><input type="date"></td><td><input type="text" placeholder="2h"></td><td><input type="text" placeholder="Cast on, worked ribbing"></td><td><input type="text" placeholder="Begin body"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Modifications & Notes</h2>
+      <textarea class="notes-area" placeholder="Pattern changes, sizing adjustments, technique notes, things to remember for next time…"></textarea>
+    </section>
+
+    <section>
+      <h2>Budget Tracker</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Estimated</th>
+            <th>Actual</th>
+            <th>Difference</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><input type="text" placeholder="Yarn"></td><td><input type="text" placeholder="$45.00"></td><td><input type="text" placeholder="$42.50"></td><td><input type="text" placeholder="-$2.50"></td></tr>
+          <tr><td><input type="text" placeholder="Needles"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text" placeholder="Pattern"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text" placeholder="Notions"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td style="font-weight:600;">Total</td><td style="font-weight:600;"><input type="text" placeholder="$"></td><td style="font-weight:600;"><input type="text" placeholder="$"></td><td style="font-weight:600;"><input type="text" placeholder="$"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Completion Checklist</h2>
+      <ul class="checklist">
+        <li><input type="checkbox"><label>All pieces finished</label></li>
+        <li><input type="checkbox"><label>Ends woven in</label></li>
+        <li><input type="checkbox"><label>Blocked / pressed</label></li>
+        <li><input type="checkbox"><label>Buttons / hardware attached</label></li>
+        <li><input type="checkbox"><label>Photos taken</label></li>
+        <li><input type="checkbox"><label>Project notes saved</label></li>
+        <li><input type="checkbox"><label>Ravelry / site updated</label></li>
+        <li><input type="checkbox"><label>Gift wrapped (if applicable)</label></li>
+      </ul>
+      <div class="field-row">
+        <div class="field">
+          <label>Actual Finish Date</label>
+          <input type="date">
+        </div>
+        <div class="field">
+          <label>Total Time</label>
+          <input type="text" placeholder="e.g., 24 hours">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label>Rating</label>
+          <select>
+            <option value="">Select…</option>
+            <option>★</option>
+            <option>★★</option>
+            <option>★★★</option>
+            <option>★★★★</option>
+            <option>★★★★★</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Would make again?</label>
+          <select>
+            <option value="">Select…</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label>Final Thoughts</label>
+        <textarea placeholder="What went well, what you'd change, recipient reaction, etc."></textarea>
+      </div>
+    </section>
+
+    <footer>
+      <p>Free Craft & Hobby Printables Kit — <a href="https://github.com/AsdaleDynamics" target="_blank" rel="noopener">Asdale Dynamics, LLC</a> — MIT License</p>
+    </footer>
+  </div>
+</body>
+</html>

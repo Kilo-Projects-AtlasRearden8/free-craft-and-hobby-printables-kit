@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pattern Tracker — Free Craft & Hobby Printables</title>
+  <link rel="stylesheet" href="print.css">
+</head>
+<body>
+  <div class="container">
+    <p class="print-hint">🖨️ Press <kbd>Ctrl/Cmd + P</kbd> to print or save as PDF. Fill in fields directly in your browser before printing.</p>
+
+    <header>
+      <h1>Pattern Tracker</h1>
+      <p class="subtitle">Track every detail of your pattern projects</p>
+      <div class="meta">
+        <span>Pattern Name: <input type="text" placeholder="Pattern name"></span>
+        <span>Designer: <input type="text" placeholder="Designer name"></span>
+      </div>
+      <div class="meta">
+        <span>Source: <input type="text" placeholder="Book, magazine, website, Ravelry ID"></span>
+        <span>URL / Ravelry ID: <input type="text" placeholder="https://..."></span>
+      </div>
+      <div class="meta">
+        <span>Category: 
+          <select>
+            <option value="">Select…</option>
+            <option>Knitting</option>
+            <option>Crochet</option>
+            <option>Sewing</option>
+            <option>Quilting</option>
+            <option>Embroidery</option>
+            <option>Other</option>
+          </select>
+        </span>
+        <span>Difficulty: 
+          <select>
+            <option value="">Select…</option>
+            <option>Beginner</option>
+            <option>Easy</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+            <option>Expert</option>
+          </select>
+        </span>
+      </div>
+      <div class="meta">
+        <span>Sizes Included: <input type="text" placeholder="XS-3XL, S/M/L, One Size, etc."></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Pattern Details</h2>
+      <div class="field-group">
+        <div class="field">
+          <label>Gauge</label>
+          <input type="text" placeholder="e.g., 18 sts × 24 rows = 4\" in stockinette">
+        </div>
+        <div class="field">
+          <label>Finished Measurements</label>
+          <input type="text" placeholder="Bust 36\", Length 24\", etc.">
+        </div>
+        <div class="field">
+          <label>Yarn Weight</label>
+          <input type="text" placeholder="Worsted, DK, Fingering, etc.">
+        </div>
+        <div class="field">
+          <label>Suggested Yarn</label>
+          <input type="text" placeholder="Brand / line name">
+        </div>
+        <div class="field">
+          <label>Yardage Required</label>
+          <input type="text" placeholder="e.g., 1200 yds total">
+        </div>
+        <div class="field">
+          <label>Needle / Hook Size</label>
+          <input type="text" placeholder="US 7 / 4.5mm">
+        </div>
+        <div class="field">
+          <label>Notions Needed</label>
+          <input type="text" placeholder="Buttons, zipper, stitch markers, etc.">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Yarn Used (for this project)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Color</th>
+            <th>Brand / Line</th>
+            <th>Colorway</th>
+            <th>Dye Lot</th>
+            <th>Skeins Used</th>
+            <th>Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><input type="text" placeholder="Main Color"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text" placeholder="3"></td><td><input type="text" placeholder="$37.50"></td></tr>
+          <tr><td><input type="text" placeholder="Contrast"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Size / Version Made</h2>
+      <div class="field-row">
+        <div class="field">
+          <label>Size Made</label>
+          <input type="text" placeholder="M, Large, 12mo, etc.">
+        </div>
+        <div class="field">
+          <label>Modifications</label>
+          <select>
+            <option value="">Select…</option>
+            <option>None</option>
+            <option>Yes (see below)</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label>Modifications Made</label>
+        <textarea class="notes-area" placeholder="Lengthened body, changed neckline, different stitch pattern, size adjustments…"></textarea>
+      </div>
+    </section>
+
+    <section>
+      <h2>Row / Round Tracker</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Section</th>
+            <th>Start Row</th>
+            <th>End Row</th>
+            <th class="number-cell">Total Rows</th>
+            <th class="number-cell">Current Row</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><input type="text" placeholder="Ribbing"></td><td><input type="text" placeholder="1"></td><td><input type="text" placeholder="12"></td><td class="number-cell"><input type="text" placeholder="12"></td><td class="number-cell"><input type="text" placeholder="12"></td><td><input type="text" placeholder="Completed"></td></tr>
+          <tr><td><input type="text" placeholder="Body"></td><td><input type="text"></td><td><input type="text"></td><td class="number-cell"><input type="text"></td><td class="number-cell"><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text" placeholder="Sleeves"></td><td><input type="text"></td><td><input type="text"></td><td class="number-cell"><input type="text"></td><td class="number-cell"><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text" placeholder="Yoke"></td><td><input type="text"></td><td><input type="text"></td><td class="number-cell"><input type="text"></td><td class="number-cell"><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text" placeholder="Finishing"></td><td><input type="text"></td><td><input type="text"></td><td class="number-cell"><input type="text"></td><td class="number-cell"><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td class="number-cell"><input type="text"></td><td class="number-cell"><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td class="number-cell"><input type="text"></td><td class="number-cell"><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td class="number-cell"><input type="text"></td><td class="number-cell"><input type="text"></td><td><input type="text"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Stitch / Pattern Notes</h2>
+      <div class="field">
+        <label>Key / Abbreviations</label>
+        <textarea class="notes-area" placeholder="k = knit, p = purl, k2tog = knit 2 together, M1 = make 1, etc."></textarea>
+      </div>
+      <div class="field">
+        <label>Special Techniques</label>
+        <textarea class="notes-area" placeholder="German short rows, tubular cast-on, Kitchener stitch, etc."></textarea>
+      </div>
+      <div class="field">
+        <label>Charts / Schematics Referenced</label>
+        <textarea class="notes-area" placeholder="Page numbers, chart names, schematic labels…"></textarea>
+      </div>
+    </section>
+
+    <section>
+      <h2>Progress Sessions</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Rows/Rounds Done</th>
+            <th>Section</th>
+            <th>Notes / Issues</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><input type="date"></td><td><input type="text" placeholder="2h 30m"></td><td><input type="text" placeholder="1-24"></td><td><input type="text" placeholder="Ribbing"></td><td><input type="text" placeholder="Tight cast-on, will loosen next time"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Issues & Solutions</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Issue</th>
+            <th>Solution / Workaround</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><input type="date"></td><td><input type="text" placeholder="Running out of yarn"></td><td><input type="text" placeholder="Found matching dye lot online"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td></tr>
+          <tr><td><input type="date"></td><td><input type="text"></td><td><input type="text"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Blocking / Finishing Notes</h2>
+      <div class="field-group">
+        <div class="field">
+          <label>Blocking Method</label>
+          <select>
+            <option value="">Select…</option>
+            <option>Wet block</option>
+            <option>Steam block</option>
+            <option>Spray block</option>
+            <option>None</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Blocking Dimensions</label>
+          <input type="text" placeholder="e.g., 40\" × 22\" after blocking">
+        </div>
+        <div class="field">
+          <label>Drying Time</label>
+          <input type="text" placeholder="e.g., 24 hours">
+        </div>
+        <div class="field">
+          <label>Pins Used</label>
+          <input type="text" placeholder="e.g., 40 T-pins">
+        </div>
+      </div>
+      <h3 style="margin:1rem 0 0.5rem;font-size:0.95rem;">Finishing Steps Completed</h3>
+      <ul class="checklist">
+        <li><input type="checkbox"><label>Ends woven in</label></li>
+        <li><input type="checkbox"><label>Seams seamed</label></li>
+        <li><input type="checkbox"><label>Buttons attached</label></li>
+        <li><input type="checkbox"><label>Zipper installed</label></li>
+        <li><input type="checkbox"><label>Lining added</label></li>
+        <li><input type="checkbox"><label>Labels attached</label></li>
+        <li><input type="checkbox"><label>Photos taken</label></li>
+        <li><input type="checkbox"><label>Project page created</label></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Rating & Review</h2>
+      <div class="field-group">
+        <div class="field">
+          <label>Overall Rating</label>
+          <select>
+            <option value="">Select…</option>
+            <option>★</option>
+            <option>★★</option>
+            <option>★★★</option>
+            <option>★★★★</option>
+            <option>★★★★★</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Clarity of Instructions</label>
+          <select>
+            <option value="">Select…</option>
+            <option>★</option>
+            <option>★★</option>
+            <option>★★★</option>
+            <option>★★★★</option>
+            <option>★★★★★</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Accuracy of Sizing</label>
+          <select>
+            <option value="">Select…</option>
+            <option>★</option>
+            <option>★★</option>
+            <option>★★★</option>
+            <option>★★★★</option>
+            <option>★★★★★</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Enjoyment Factor</label>
+          <select>
+            <option value="">Select…</option>
+            <option>★</option>
+            <option>★★</option>
+            <option>★★★</option>
+            <option>★★★★</option>
+            <option>★★★★★</option>
+          </select>
+        </div>
+      </div>
+      <div class="field-group">
+        <div class="field">
+          <label>Would Make Again?</label>
+          <select>
+            <option value="">Select…</option>
+            <option>Yes</option>
+            <option>No</option>
+            <option>Maybe (with modifications)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Recommend to Others?</label>
+          <select>
+            <option value="">Select…</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label>Review Notes</label>
+        <textarea class="notes-area" placeholder="What worked, what didn't, tips for others, yarn substitution notes…"></textarea>
+      </div>
+    </section>
+
+    <section>
+      <h2>Project Photos / Links</h2>
+      <div class="field-group">
+        <div class="field">
+          <label>Photo 1</label>
+          <input type="text" placeholder="File name, URL, or description">
+        </div>
+        <div class="field">
+          <label>Photo 2</label>
+          <input type="text" placeholder="File name, URL, or description">
+        </div>
+        <div class="field">
+          <label>Photo 3</label>
+          <input type="text" placeholder="File name, URL, or description">
+        </div>
+      </div>
+      <div class="field-group">
+        <div class="field">
+          <label>Project Page URL</label>
+          <input type="url" placeholder="https://ravelry.com/projects/... or blog post">
+        </div>
+        <div class="field">
+          <label>Social Share</label>
+          <input type="text" placeholder="Instagram hashtag, Twitter link, etc.">
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Free Craft & Hobby Printables Kit — <a href="https://github.com/AsdaleDynamics" target="_blank" rel="noopener">Asdale Dynamics, LLC</a> — MIT License</p>
+    </footer>
+  </div>
+</body>
+</html>
